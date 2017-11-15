@@ -41,8 +41,8 @@ public:
 	void setAnswer3(const string);
 	string getAnswer3()const;
 
-	void setAnswer1(const string);
-	string getAnswer1()const;
+	void setAnswer4(const string);
+	string getAnswer4()const;
 
 	void setCategory(const string);
 	string getCategory()const;
