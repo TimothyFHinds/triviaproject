@@ -21,10 +21,12 @@ private:
 	string answer3;
 	string answer4;
 	int correctAnswer;
+	bool hasBeenAsked;
+
 
 public:
 	Question(const string &, const string &, const string &, const string &,
-			const string &, int);
+			const string &, int, bool asked);
 
 	void setQuestion(const string);
 	string getQuestion()const;
@@ -43,6 +45,9 @@ public:
 
 	void setCorrect(int);
 	int getCorrect()const;
+
+	void setAsked(bool);
+	bool getAsked()const;
 
 	void displayInfo();
 
