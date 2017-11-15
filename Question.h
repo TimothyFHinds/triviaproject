@@ -20,13 +20,14 @@ private:
 	string answer2;
 	string answer3;
 	string answer4;
+	string category;
 	int correctAnswer;
 	bool hasBeenAsked;
 
 
 public:
 	Question(const string &, const string &, const string &, const string &,
-			const string &, int, bool asked);
+			const string &, const string &, int, bool asked);
 
 	void setQuestion(const string);
 	string getQuestion()const;
@@ -42,6 +43,9 @@ public:
 
 	void setAnswer1(const string);
 	string getAnswer1()const;
+
+	void setCategory(const string);
+	string getCategory()const;
 
 	void setCorrect(int);
 	int getCorrect()const;
