@@ -8,3 +8,21 @@
 
 
 #include "triviagame.hpp"
+#include "Question.h"
+#include "Player.h"
+#include <iostream>
+#include <string>
+using namespace std;
+
+//Question(question,a1,a2,a3,a4,category,correctAnswer#,hasBeenAsked?)
+
+
+int main()
+{
+	createPlayer();
+
+
+
+
+
+}

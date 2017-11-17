@@ -10,10 +10,11 @@
 #include <string>
 using namespace std;
 
-Question::Question(const string &q, const string &a1, const string a2, const string a3, const string a4, const string cat, int right, bool hasAsked)
+void Question::Question(const string &q, const string &a1, const string a2, const string a3, const string a4, const string cat, int right, bool asked)
 {
 	// TODO Auto-generated constructor stub
 
+	//Question(question,a1,a2,a3,a4,category,correctAnswer#,hasBeenAsked?)
 	question = q;
 	answer1 = a1;
 	answer2 = a2;
@@ -21,15 +22,15 @@ Question::Question(const string &q, const string &a1, const string a2, const str
 	answer4 = a4;
 	category = cat;
 	correctAnswer = (right);
-	hasBeenAsked = hasAsked;
+	hasBeenAsked = asked;
 
 	//thats all of the constructor info
 }
 
 //SETTERS!!!
-void Question::setQuestion(string ques)
+void Question::setQuestion(string q)
 {
-	question = ques;
+	question = q;
 }
 void Question::setAnswer1(string a1)
 {
